@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    background-color: #FEDCC8;
+  }
+  
+  .parallax {
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin-left: -1500px;
+  }
+  
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .parallax__layer img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .parallax__cover {
+    background: #2D112B;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    z-index: 2;
+  }
+  
+  .parallax__layer__0 {
+    transform: translateZ(-300px) scale(4);
+  }
+  
+  .parallax__layer__1 {
+    transform: translateZ(-250px) scale(3.5);
+  }
+  
+  .parallax__layer__2 {
+    transform: translateZ(-200px) scale(3);
+  }
+  
+  .parallax__layer__3 {
+    transform: translateZ(-150px) scale(2.5);
+  }
+  
+  .parallax__layer__4 {
+    transform: translateZ(-100px) scale(2);
+  }
+  
+  .parallax__layer__5 {
+    transform: translateZ(-50px) scale(1.5);
+  }
+  
+  .parallax__layer__6 {
+    transform: translateZ(0px) scale(1);
+  }
+  
+
+
+  .body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+   
+  }
+  
+  .words {
+    color: #2D112B;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .words span {
+    font-size: 7rem;
+    display: inline-block;
+    animation: move 5s ease-in-out infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-30%, 0);
+    }
+    50% {
+      text-shadow: 0 55px 80px rgb(0, 0, 0);
+    }
+    100% {
+      transform: translate(30%, 0);
+    }
+  }
+  
+  .words span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .words span:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .words span:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  
+  .words span:nth-child(5) {
+    animation-delay: 2s;
+  }
+  
+  .words span:nth-child(6) {
+    animation-delay: 2.5s;
+  }
+  
+  .words span:nth-child(7) {
+    animation-delay: 3s;
+  }
+  .words span:nth-child(8) {
+    animation-delay: 3.5s;
+  }
+  .words span:nth-child(9) {
+    animation-delay: 4s;
+  }
+ 
